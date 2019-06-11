@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'DCToolModule'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.summary      = 'DCToolModule.'
 
   s.description  = <<-DESC
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
 
   s.prefix_header_contents = '#import <Foundation/Foundation.h>', '#import <UIKit/UIKit.h>', '#import "DCToolModuleConfig.h"'
 
-  s.public_header_files = 'DCToolModule/DCToolModule/**/DCToolModuleModule.h'
+  s.public_header_files = 'DCToolModule/**/DCToolModuleModule.h'
 
-  s.source_files  = 'DCToolModule/DCToolModule/**/*.{h,m,swift}'
+  s.source_files  = 'DCToolModule/**/*.{h,m,swift}'
 
 s.resources = ['DCToolModule/Assets/**/*.bundle']
 
