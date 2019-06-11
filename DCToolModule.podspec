@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'DCToolModule'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'DCToolModule.'
 
   s.description  = <<-DESC
@@ -20,154 +20,154 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'DCToolModule/DCToolModule/**/*.{h,m,swift}'
 
-s.resources = ['PRBaseDependTool/Assets/**/*.bundle']
+s.resources = ['DCToolModule/Assets/**/*.bundle']
 
 
 #---------------------------文件分级---------------------------#
 
 s.subspec 'DependToolHeader' do |ss| #宏定义公共头文件
-ss.source_files = 'PRBaseDependTool/Classes/DependToolHeader/*'
-ss.dependency 'PRBaseDependTool/FunctionTool/PRMarketManager'
+ss.source_files = 'DCToolModule/Classes/DependToolHeader/*'
+ss.dependency 'DCToolModule/FunctionTool/PRMarketManager'
 end
 
 s.subspec 'Category' do |ss|
 
 ss.subspec 'PRBassCategoryHeader' do |sss| #类别公共头文件
-sss.source_files = 'PRBaseDependTool/Classes/Category/PRBassCategoryHeader/*'
+sss.source_files = 'DCToolModule/Classes/Category/PRBassCategoryHeader/*'
 
-sss.dependency 'PRBaseDependTool/Category/NSCalendarCategroy'
-sss.dependency 'PRBaseDependTool/Category/NSDateCategroy'
-sss.dependency 'PRBaseDependTool/Category/NSNumberFormatterCategroy'
-sss.dependency 'PRBaseDependTool/Category/NSStringCategroy'
-sss.dependency 'PRBaseDependTool/Category/NSUrlCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIButtonCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIBarButtonCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIColorCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIDeviceCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIImageCategroy'
-sss.dependency 'PRBaseDependTool/Category/UILabelCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIPickerViewCategroy'
-sss.dependency 'PRBaseDependTool/Category/UITextfieldCategroy'
-sss.dependency 'PRBaseDependTool/Category/UITextViewCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIViewCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIViewControllerCategroy'
+sss.dependency 'DCToolModule/Category/NSCalendarCategroy'
+sss.dependency 'DCToolModule/Category/NSDateCategroy'
+sss.dependency 'DCToolModule/Category/NSNumberFormatterCategroy'
+sss.dependency 'DCToolModule/Category/NSStringCategroy'
+sss.dependency 'DCToolModule/Category/NSUrlCategroy'
+sss.dependency 'DCToolModule/Category/UIButtonCategroy'
+sss.dependency 'DCToolModule/Category/UIBarButtonCategroy'
+sss.dependency 'DCToolModule/Category/UIColorCategroy'
+sss.dependency 'DCToolModule/Category/UIDeviceCategroy'
+sss.dependency 'DCToolModule/Category/UIImageCategroy'
+sss.dependency 'DCToolModule/Category/UILabelCategroy'
+sss.dependency 'DCToolModule/Category/UIPickerViewCategroy'
+sss.dependency 'DCToolModule/Category/UITextfieldCategroy'
+sss.dependency 'DCToolModule/Category/UITextViewCategroy'
+sss.dependency 'DCToolModule/Category/UIViewCategroy'
+sss.dependency 'DCToolModule/Category/UIViewControllerCategroy'
 end
 
 
 ss.subspec 'NSCalendarCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/NSCalendarCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/NSCalendarCategroy/*'
 end
 
 ss.subspec 'NSDateCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/NSDateCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/NSDateCategroy/*'
 end
 
 ss.subspec 'NSNumberFormatterCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/NSNumberFormatterCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/NSNumberFormatterCategroy/*'
 end
 
 ss.subspec 'NSStringCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/NSStringCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/NSStringCategroy/*'
 end
 
 ss.subspec 'NSUrlCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/NSUrlCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/NSUrlCategroy/*'
 end
 
 ss.subspec 'UIButtonCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIButtonCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIButtonCategroy/*'
 end
 
 ss.subspec 'UIBarButtonCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIBarButtonCategroy/*'
-sss.dependency 'PRBaseDependTool/Category/UIButtonCategroy'
+sss.source_files = 'DCToolModule/Classes/Category/UIBarButtonCategroy/*'
+sss.dependency 'DCToolModule/Category/UIButtonCategroy'
 end
 
 ss.subspec 'UIColorCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIColorCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIColorCategroy/*'
 end
 
 ss.subspec 'UIDeviceCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIDeviceCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIDeviceCategroy/*'
 end
 
 ss.subspec 'UIImageCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIImageCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIImageCategroy/*'
 end
 
 ss.subspec 'UILabelCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UILabelCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UILabelCategroy/*'
 end
 
 ss.subspec 'UIPickerViewCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIPickerViewCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIPickerViewCategroy/*'
 end
 
 ss.subspec 'UITextfieldCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UITextfieldCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UITextfieldCategroy/*'
 end
 
 ss.subspec 'UITextViewCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UITextViewCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UITextViewCategroy/*'
 end
 
 ss.subspec 'UIViewCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIViewCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIViewCategroy/*'
 end
 
 ss.subspec 'UIViewControllerCategroy' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/Category/UIViewControllerCategroy/*'
+sss.source_files = 'DCToolModule/Classes/Category/UIViewControllerCategroy/*'
 end
 
 end
 
 s.subspec 'LoginStatue' do |ss|
-ss.source_files = 'PRBaseDependTool/Classes/LoginStatue/*'
+ss.source_files = 'DCToolModule/Classes/LoginStatue/*'
 end
 
 s.subspec 'FunctionTool' do |ss|
 
 ss.subspec 'MBProgressHUD+WL' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/MBProgressHUD+WL/*'
-sss.resources = 'PRBaseDependTool/Classes/FunctionTool/MBProgressHUD+WL/MBProgressHUD.bundle'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/MBProgressHUD+WL/*'
+sss.resources = 'DCToolModule/Classes/FunctionTool/MBProgressHUD+WL/MBProgressHUD.bundle'
 end
 
 ss.subspec 'PRMarketManager' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/PRMarketManager/*'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/PRMarketManager/*'
 end
 
 ss.subspec 'SSKeychain' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/SSKeychain/*'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/SSKeychain/*'
 end
 
 ss.subspec 'AlertView' do |sss|
-sss.dependency 'PRBaseDependTool/DependToolHeader'
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/AlertView/*'
+sss.dependency 'DCToolModule/DependToolHeader'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/AlertView/*'
 end
 
 ss.subspec 'PurangUITextFieldExPand' do |sss|
-sss.dependency 'PRBaseDependTool/Category/UIViewCategroy'
-sss.dependency 'PRBaseDependTool/Category/UITextfieldCategroy'
-sss.dependency 'PRBaseDependTool/DependToolHeader'
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/PurangUITextFieldExPand/*'
+sss.dependency 'DCToolModule/Category/UIViewCategroy'
+sss.dependency 'DCToolModule/Category/UITextfieldCategroy'
+sss.dependency 'DCToolModule/DependToolHeader'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/PurangUITextFieldExPand/*'
 end
 
 ss.subspec 'XLImageViewer' do |sss|
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/XLImageViewer/*'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/XLImageViewer/*'
 end
 
 ss.subspec 'Utils' do |sss|
-sss.dependency 'PRBaseDependTool/Category/NSStringCategroy'
-sss.dependency 'PRBaseDependTool/Category/UIColorCategroy'
-sss.dependency 'PRBaseDependTool/FunctionTool/SSKeychain'
-sss.source_files = 'PRBaseDependTool/Classes/FunctionTool/Utils/*'
+sss.dependency 'DCToolModule/Category/NSStringCategroy'
+sss.dependency 'DCToolModule/Category/UIColorCategroy'
+sss.dependency 'DCToolModule/FunctionTool/SSKeychain'
+sss.source_files = 'DCToolModule/Classes/FunctionTool/Utils/*'
 end
 
 end
 
 s.subspec 'TMRouter' do |ss|
-ss.source_files = 'PRBaseDependTool/Classes/TMRouter/*'
-ss.dependency 'PRBaseDependTool/Category/UIImageCategroy'
+ss.source_files = 'DCToolModule/Classes/TMRouter/*'
+ss.dependency 'DCToolModule/Category/UIImageCategroy'
 end
 
 s.dependency 'SDWebImage', '~> 4.4.6'
