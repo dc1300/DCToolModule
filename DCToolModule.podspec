@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'DCToolModule'
-  s.version      = '1'
+  s.version      = '0.0.1'
   s.summary      = 'DCToolModule.'
 
   s.description  = <<-DESC
